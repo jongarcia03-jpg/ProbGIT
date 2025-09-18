@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  clima:
+    build: .
+    container_name: clima-web
+    ports:
+      - "7860:7860"
+    restart: unless-stopped
